@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #a18262;
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+    background: #544a4a;
+}
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title{
+    color: black; 
+    z-index: 2;   
+}
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Search--box {
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.Search--box input {
+    background: transparent;
+    padding: 10px;
+}
+.Search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.Search--box i:hover {
+    transform: scale(1.2);
+}
+
+/* card container */
+.card-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+
+.card-container img {
+    width: 50px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.main--title {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.payment-card {
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment-card:hover{
+    transform: translateY(-5px);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.ammount{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title{
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.amount-value{
+    font-size: 30px;
+    font-family: "Courier New",  Courier, monospace;
+    font-weight: 600;
+}
+.icon{
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: red;
+}
+.card-detail{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: "Courier New",  Courier, monospace;;
+}
+
+.visi{
+    background: #a18262;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    
+}
+
+/* color css*/
+.ligth-red {
+    background: #fff1dc;
+}
+.light-purple {
+    background: #FCF5ED;
+}
+.light-green {
+    background: #FCF5ED;
+}
+.light-blue {
+    background: #fff1dc;
+}
+.dark-red {
+    background: #B0926A;
+}
+.dark-purple {
+    background: #ED7D31;
+}
+.dark-green {
+    background: #ED7D31;
+}
+.dark-blue {
+    background: #B0926A;
+}
+
+/* tabular --wrapper*/
+
+.tabular--wrapper {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.table-container{
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background: #a18262;
+    color: #fff;
+}
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+tbody {
+    background: #f2f2f2;
+}
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+tr:nth-child(even){
+    background: #fff;
+}
+tfoot{
+    background: #a18262;
+    font-weight: bold;
+    color: #fff;
+}
+tfoot td{
+    padding: 15px;
+    color: #fff;
+}
+
+
+.btnpdf{
+    background: none;
+    font-size: 18px;
+}
+/*footer*/
+/* Estilos para el footer */
+.pie {
+    background-color: rgb(235, 231, 231); /* Cambia el color de fondo a tu elección */
+    color: black; /* Cambia el color del texto a tu elección */
+    padding: 5px; /* Añade espacio alrededor del contenido del footer */
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+  
+  /* Estilos para la sección del header con el logo y las redes sociales */
+  .pie .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 45px;
+    width: 100%;
+    
+  }
+  
+  .pie .header .logo img {
+    max-width: 140px; /* Ajusta el ancho máximo de la imagen del logo */
+    margin-top: 20px; 
+  }
+  
+  .pie .header .logotipo {
+    font-size: 24px; /* Cambia el tamaño del texto del logotipo a tu elección */
+    
+   
+  }
+  
+  /* Estilos para los íconos de redes sociales */
+  .pie .redes {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .pie .redes span {
+      margin-left: 10px;
+    }
+    
+    /* Añade un espacio a la derecha de los íconos para separarlos */
+    .pie .redes span:last-child {
+      margin-right: 0;
+    }
+  
+  /* Estilos para la línea horizontal */
+  .pie hr {
+    border-color: #777; /* Cambia el color de la línea horizontal a tu elección */
+    margin: 20px 0; /* Añade espacio antes y después de la línea horizontal */
+    width: 100%;
+  }
+  
+  /* Estilos para las secciones de Ubicación, Soporte y Courses */
+  .pie .section {
+    display: flex;
+    justify-content: space-between;
+    gap: 180px;
+    
+   
+  }
+  
+  .pie .section h2 {
+    font-size: 20px; /* Cambia el tamaño de los títulos de sección a tu elección */
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%;
+  }
+  
+  .pie .section a {
+    color: black; /* Cambia el color de los enlaces a tu elección */
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+    display: block;
+    margin-bottom: 5px; /* Añade espacio entre los enlaces */
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%;
+  }
+  
+  /* Estilos para los elementos de derechos de autor y políticas */
+  .pie .derechos {
+    margin-top: 10px; /* Añade espacio antes de los elementos de derechos de autor */
+    width: 100%;
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .pie .derechos p {
+    font-size: 14px; /* Cambia el tamaño del texto de derechos de autor a tu elección */
+  }
+
+  .ki {
+    width: 48%;
+    margin: 10px; 
+  }
+  
+  .ke {
+    width: 48%;
+    margin: 10px;
+  }
